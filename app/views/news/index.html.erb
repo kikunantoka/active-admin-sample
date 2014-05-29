@@ -1,0 +1,9 @@
+<% @news.each do |news_| %>
+<div class="news">
+<h2><%= news_.title %></h2>
+<p><%= truncate(news_.description) %><br />
+<p><%= news_.release_date %><br />
+<a href="/news/<%= news_.id %>">さらに詳しく</a>
+</p>
+</div>
+<% end %>

@@ -1,6 +1,10 @@
 ActiveAdminSample::Application.routes.draw do
+  get "news/index"
+  get "news/show"
   get "blog/index"
   get "blog/show"
+  root to: "news#index", as:"news"
+  resources :news
   root to: "blog#index", as:"blog"
   resources :blog
   devise_for :admin_users, ActiveAdmin::Devise.config
