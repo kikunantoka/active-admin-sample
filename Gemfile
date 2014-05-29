@@ -14,6 +14,8 @@ group :test do
   gem 'capybara', '2.1.0'
 end
 
+gem 'execjs'
+gem 'therubyracer'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'sass-rails', '4.0.2'

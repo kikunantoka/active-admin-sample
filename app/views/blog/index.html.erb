@@ -1,0 +1,8 @@
+<% @blogs.each do |blog| %>
+<div class="blog">
+<h2><%= blog.title %></h2>
+<p><%= truncate(blog.description) %><br />
+<a href="/blog/<%= blog.id %>">さらに詳しく</a>
+</p>
+</div>
+<% end %>

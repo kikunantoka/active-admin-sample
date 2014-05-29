@@ -1,4 +1,8 @@
 ActiveAdminSample::Application.routes.draw do
+  get "blog/index"
+  get "blog/show"
+  root to: "blog#index", as:"blog"
+  resources :blog
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
